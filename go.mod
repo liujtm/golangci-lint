@@ -1,6 +1,6 @@
 module github.com/golangci/golangci-lint
 
-go 1.21.0
+go 1.22.4
 
 require (
 	4d63.com/gocheckcompilerdirectives v1.2.1
@@ -69,6 +69,7 @@ require (
 	github.com/ldez/gomoddirectives v0.2.4
 	github.com/ldez/tagliatelle v0.5.0
 	github.com/leonklingele/grouper v1.1.2
+	github.com/liujtm/first_param_ctx_linter v0.0.0-20240807045604-4003c4f69b7b
 	github.com/lufeee/execinquery v1.2.1
 	github.com/macabu/inamedparam v0.1.3
 	github.com/maratori/testableexamples v1.0.0
@@ -125,7 +126,7 @@ require (
 	go-simpler.org/sloglint v0.7.2
 	go.uber.org/automaxprocs v1.5.3
 	golang.org/x/exp v0.0.0-20240103183307-be819d1f06fc
-	golang.org/x/tools v0.23.0
+	golang.org/x/tools v0.24.0
 	gopkg.in/yaml.v3 v3.0.1
 	honnef.co/go/tools v0.4.7
 	mvdan.cc/gofumpt v0.6.0
@@ -189,9 +190,9 @@ require (
 	go.uber.org/multierr v1.6.0 // indirect
 	go.uber.org/zap v1.24.0 // indirect
 	golang.org/x/exp/typeparams v0.0.0-20240314144324-c7f7c6466f7f // indirect
-	golang.org/x/mod v0.19.0 // indirect
-	golang.org/x/sync v0.7.0 // indirect
-	golang.org/x/sys v0.22.0 // indirect
+	golang.org/x/mod v0.20.0 // indirect
+	golang.org/x/sync v0.8.0 // indirect
+	golang.org/x/sys v0.23.0 // indirect
 	golang.org/x/text v0.15.0 // indirect
 	google.golang.org/protobuf v1.33.0 // indirect
 	gopkg.in/ini.v1 v1.67.0 // indirect

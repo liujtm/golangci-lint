@@ -831,6 +831,14 @@ func (LinterBuilder) Build(cfg *config.Config) ([]*linter.Config, error) {
 			WithLoadForGoAnalysis().
 			WithURL("https://github.com/ykadowak/zerologlint"),
 
+		// make build 编译二进制文件后，运行
+		// ./golangci-lint run --no-config --disable-all -E firstparamcontext   ~/code/first_param_ctx_linter/test_src_file_to_check.go
+		linter.NewConfig(golinters.NewfirstparamcontextCheck()).
+			WithSince("v1.20.0").
+			WithPresets(linter.PresetStyle).
+			WithLoadForGoAnalysis().
+			WithURL("github.com/liujtm/first_param_ctx_linter"),
+
 		// nolintlint must be last because it looks at the results of all the previous linters for unused nolint directives
 		linter.NewConfig(nolintlint.New(&cfg.LintersSettings.NoLintLint)).
 			WithSince("v1.26.0").
